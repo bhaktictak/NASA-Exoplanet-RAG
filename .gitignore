@@ -1,0 +1,39 @@
+
+.venv/
+venv/
+
+
+.env
+
+che# ===========================
+# Python Ca
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+chroma_db/
+
+
+.ipynb_checkpoints/
+
+
+.vscode/
+
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+build/
+dist/
+*.egg-info/
+
+*.log
+
+
+.pytest_cache/
+.coverage
+htmlcov/
