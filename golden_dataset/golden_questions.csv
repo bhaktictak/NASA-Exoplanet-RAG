@@ -1,0 +1,42 @@
+question,expected_topic,expected_document,difficulty
+
+What is the James Webb Space Telescope?,JWST,WEbb overview,Easy
+What is a black hole?,Black Holes,Black Hole Basics,Easy
+What is dark matter?,Dark Matter,Dark Matter,Easy
+What is dark energy?,Dark Energy,Dark Energy,Easy
+What is the Big Bang?,Big Bang,Big Bang and the Evolution of the Universe,Easy
+What is an exoplanet?,Exoplanets,Exoplanets,Easy
+What is the habitable zone?,Exoplanets,Exoplanets,Easy
+What is the Hubble Space Telescope?,Hubble,Hubble fact overview,Easy
+What is the event horizon?,Black Holes,Black Hole Anatomy,Easy
+What is the Artemis mission?,Artemis,About NASA,Easy
+How does the James Webb Space Telescope differ from the Hubble Space Telescope?,JWST|Hubble,WEbb overview|Hubble fact overview,Medium
+Why is the habitable zone important when searching for exoplanets?,Exoplanets,Habitable Worlds,Medium
+How are exoplanets discovered using the transit method?,TESS,03_TESS_Mission,Medium
+How did the Kepler mission help scientists discover exoplanets?,Kepler,02_Kepler_Mission,Medium
+Why can't light escape from a black hole?,Black Holes,Black Hole Anatomy,Medium
+What evidence supports the Big Bang theory?,Universe,Big Bang and the Evolution of the Universe,Medium
+How are dark matter and dark energy different?,Universe,Dark Matter|Dark Energy,Medium
+How does the Curiosity rover study Mars?,Mars,Curiosity,Medium
+What are the primary objectives of NASA's Artemis program?,Artemis,Artemis overview,Medium
+How does JWST help scientists study exoplanet atmospheres?,JWST,Observing Exoplanets with JWST,Medium
+Which telescope is better suited for studying exoplanet atmospheres and why?,JWST|Hubble,Observing Exoplanets with JWST|Hubble fact overview,Hard
+How do the Kepler and TESS missions complement each other in the search for exoplanets?,Kepler|TESS,02_Kepler_Mission|03_TESS_Mission,Hard
+Why are infrared observations important for the James Webb Space Telescope?,JWST,WEbb overview,Hard
+How does the transit method differ from direct imaging for exoplanet detection?,Exoplanets|JWST,Exoplanets|Observing Exoplanets with JWST,Hard
+How do black holes influence nearby stars and galaxies?,Black Holes,Black Hole Basics,Hard
+How does dark matter affect the structure of galaxies?,Dark Matter,Dark Matter,Hard
+Why is dark energy considered one of the greatest mysteries in cosmology?,Dark Energy,Dark Energy,Hard
+How does the Big Bang theory explain the expansion of the universe?,Universe,Big Bang and the Evolution of the Universe,Hard
+How does NASA combine different space telescopes to better understand the universe?,JWST|Hubble,Hubble Science Highlights|WEbb overview,Hard
+Why is the search for biosignatures important in the study of exoplanets?,Astrobiology,AI Astrobiology Life Detection & Biosignatures,Hard
+How does the James Webb Space Telescope differ from the Hubble Space Telescope in terms of observation capabilities?,JWST|Hubble,WEbb overview|Hubble fact overview,Comparison
+How do the Kepler and TESS missions differ in their approach to discovering exoplanets?,Kepler|TESS,02_Kepler_Mission|03_TESS_Mission,Comparison
+How are dark matter and dark energy different in their roles in the universe?,Dark Matter|Dark Energy,Dark Matter|Dark Energy,Comparison
+Compare the objectives of the Curiosity and Perseverance Mars rovers.,Mars,Curiosity|Perseverance,Comparison
+How does the Artemis program differ from the Apollo missions?,Artemis,Artemis overview|About NASA,Comparison
+Has NASA confirmed the existence of alien life?,Unknown,None,Edge
+Can humans travel faster than the speed of light?,Unknown,None,Edge
+Who was the first person to land on Mars?,Unknown,None,Edge
+What is the capital city of Jupiter?,Unknown,None,Edge
+Did NASA discover a habitable planet identical to Earth?,Unknown,None,Edge

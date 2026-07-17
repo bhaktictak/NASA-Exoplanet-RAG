@@ -8,4 +8,6 @@ pypdf
 python-dotenv
 openai
 tiktoken
-
+google-genai
+pydantic 
+pandas #just for evaluation

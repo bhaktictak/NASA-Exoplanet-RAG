@@ -1,6 +1,5 @@
 import re
 import torch
-
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import embedding_model, CHROMA_DB_PATH
@@ -62,15 +61,6 @@ print(f"\nChunks after filtering : {len(chunks)}")
 
 
 print(f"\nTotal Clean Chunks : {len(chunks)}")
-
-
-# ----------------------------
-# Step 4 : Device Selection
-# ----------------------------
-
-device = "cuda" if torch.cuda.is_available() else "cpu"
-
-print(f"\nUsing Device : {device}")
 
 vector_db = Chroma.from_documents(
     documents=chunks,

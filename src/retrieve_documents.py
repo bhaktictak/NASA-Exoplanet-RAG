@@ -30,7 +30,7 @@ results = vector_db.similarity_search(
 # Step 5 : Display Results
 # ----------------------------
 
-print("\nTop 3 Retrieved Chunks\n")
+print(f"\nTop {TOP_K} Retrieved Chunks")
 
 for i, doc in enumerate(results, start=1):
 
