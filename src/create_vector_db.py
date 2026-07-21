@@ -1,5 +1,4 @@
 import re
-import torch
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from config import embedding_model, CHROMA_DB_PATH
@@ -45,10 +44,17 @@ def clean_text(text):
     return text.strip()
 
 
+# ----------------------------
+# Step 4 : Clean Chunks
+# ----------------------------
+
 for chunk in chunks:
     chunk.page_content = clean_text(chunk.page_content)
+
+print(f"\nChunks before filtering : {len(chunks)}")
+
 # ----------------------------
-# Step 3.1 : Remove Low-Information Chunks
+# Step 5 : Remove Low-Information Chunks
 # ----------------------------
 
 chunks = [
@@ -57,7 +63,7 @@ chunks = [
     if len(chunk.page_content.split()) >= 20
 ]
 
-print(f"\nChunks after filtering : {len(chunks)}")
+print(f"Chunks after filtering : {len(chunks)}")
 
 
 print(f"\nTotal Clean Chunks : {len(chunks)}")
