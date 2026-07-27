@@ -32,13 +32,14 @@ vector_db = Chroma(
 )
 
 
-def answer_question(question: str):
+def answer_question(question: str, chat_history=None):
 
     docs = vector_db.max_marginal_relevance_search(
         question,
         k=TOP_K,
         fetch_k=20
     )
+    
 
     sources = {}
 
@@ -54,22 +55,37 @@ def answer_question(question: str):
         doc.page_content for doc in docs
     )
     
+    conversation = ""
+
+    if chat_history:
+        for msg in chat_history:
+            role = "User" if msg["role"] == "user" else "Assistant"
+            conversation += f"{role}: {msg['content']}\n"
+
 
     prompt = f"""
 You are a NASA Space Science Assistant.
 
 Use ONLY the provided context.
 
-If the context contains information that partially answers the question, answer using that information.
+The conversation history is provided to help understand follow-up questions.
 
-Only say "I couldn't find that information in the provided NASA documents." if the retrieved context is completely unrelated to the user's question.
+If the current question refers to something mentioned earlier (like "it", "they", "that telescope"), use the conversation history to understand what the user means.
 
-Be concise and factual.
+Do NOT invent facts.
 
-Context:
+Only answer using the retrieved context.
+
+Conversation History:
+
+{conversation}
+
+Retrieved Context:
+
 {context}
 
-Question:
+Current Question:
+
 {question}
 
 Answer:
